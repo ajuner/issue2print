@@ -9,8 +9,11 @@ jobs:
   issue-create:
     runs-on: self-hosted
     steps:
+      - name: Check Out
+        uses: actions/checkout@v2
+  
       - name: Issue Create
-        uses: ./
+        uses: ./.github/actions/issue-create
         with:
           action: ${{ github.event.action }}
           issue: ${{ toJson(github.event.issue) }}
