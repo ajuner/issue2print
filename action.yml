@@ -5,6 +5,7 @@ author: 'ajuner'
 runs:
   steps: 
     - name: run
+      shell: bash
       run: |
         node index.js
 
