@@ -3,11 +3,8 @@ description: 'test action'
 author: 'ajuner'
 
 runs:
-  steps: 
-    - name: run
-      shell: bash
-      run: |
-        node index.js
+  using: 'node16'
+  main: 'index.js'
 
 inputs:
   action:
