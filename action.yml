@@ -1,0 +1,11 @@
+name: 'Issue to Print'
+description: 'test action'
+author: 'ajuner'
+
+inputs:
+  action:
+    description: 'Action name'
+  issue:
+    description: 'Issue number'
+  repo:
+    description: 'Repository name'
