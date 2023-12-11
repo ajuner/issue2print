@@ -1,5 +1,9 @@
 const core = require('@actions/core');
 
-const input = core.getInput('env');
+const action = core.getInput('action');
+const issue = core.getInput('issue');
+const repo = core.getInput('repo');
 
-console.log('env', input);
+console.log('action', action);
+console.log('issue', issue);
+console.log('repo', repo);
