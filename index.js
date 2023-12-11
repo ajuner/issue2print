@@ -1,4 +1,4 @@
-import core from "@actions/core";
+const core = require("@actions/core");
 
 const action = core.getInput("action");
 const issue = core.getInput("issue");
