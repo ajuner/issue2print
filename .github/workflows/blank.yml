@@ -10,7 +10,8 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Issue Create
-# 跑项目路径下的index.js
-        run: node F:/issue2print/index.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: ./
+        with:
+          action: ${{ github.event.action }}
+          issue: ${{ toJson(github.event.issue) }}
+          repo: ${{ toJson(github.event.repository) }}
