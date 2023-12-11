@@ -1,0 +1,23 @@
+{
+  "name": "issue2print",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajuner/issue2print.git"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajuner/issue2print/issues"
+  },
+  "homepage": "https://github.com/ajuner/issue2print#readme"
+}
