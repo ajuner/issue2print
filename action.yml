@@ -2,10 +2,6 @@ name: 'Issue to Print'
 description: 'test action'
 author: 'ajuner'
 
-runs:
-  using: 'node'
-  main: 'index.js'
-
 inputs:
   action:
     description: 'Action name'
