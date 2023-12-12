@@ -3,7 +3,7 @@ name: CI
 
 on:
   issues:
-    types: [opened, edited, milestoned, demilestoned, closed, reopened]
+    types: [opened, edited, milestoned, demilestoned, closed, reopened, labeled, unlabeled, assigned, unassigned]
 
 jobs:
   issue-create:
