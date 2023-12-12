@@ -37,10 +37,11 @@ const actionText = {
 };
 
 cmds.push(`TEXT 0,20,"TSS24.BF2",0,1,1,"${actionText[action]}"`);
-cmds.push(`TEXT 0,60,"TSS24.BF2",0,2,2,"${issue.title}"`);
+cmds.push(`TEXT 0,60,"TSS24.BF2",0,1,1,"标题：${issue.title}"`);
+cmds.push(`TEXT 0,100,"TSS24.BF2",0,1,1,"用户：${issue.user.login}"`);
 if (!!issue?.assignees?.length) {
   const logins = issue.assignees.map((item) => item.login).join("、");
-  cmds.push(`TEXT 0,120,"TSS24.BF2",0,1,1,"任务分配者：${logins}"`);
+  cmds.push(`TEXT 0,180,"TSS24.BF2",0,1,1,"任务分配者：${logins}"`);
 }
 cmds.push("PRINT 1", "");
 
