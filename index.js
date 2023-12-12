@@ -13,12 +13,10 @@ if (!printer) {
 }
 
 const action = core.getInput("action");
-const issue = core.getInput("issue");
-const repo = core.getInput("repo");
+const issue = JSON.parse(core.getInput("issue"));
 
 console.log("action", action);
 console.log("issue", issue);
-console.log("repo", repo);
 
 const cmds = [
   "SIZE 45 mm,60 mm",
